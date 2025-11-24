@@ -1,0 +1,106 @@
+.main {
+  background-color: $gray-color;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(12, 1fr);
+
+  @media (max-width: 1536px) {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media (max-width: 590px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 36px $container-offset;
+  max-width: $container-width;
+
+  @media (max-width: 1536px) {
+    max-width: 1024px;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 768px;
+    padding: 24px $container-offset;
+  }
+
+  @media (max-width: 758px) {
+    max-width: 640px;
+    padding: 24px $container-offset;
+  }
+
+  @media (max-width: 590px) {
+    max-width: 590px;
+    padding: 24px $container-offset;
+  }
+}
+
+.form {
+  &__group {
+    margin-bottom: 20px;
+  }
+  
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    &:focus {
+      outline: none;
+      border-color: $purple-color;
+    }
+  }
+}
+
+.sr-only {
+  @extend .visually-hidden;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

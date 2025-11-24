@@ -1,0 +1,23 @@
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/base';
+
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/burger';
+@import 'components/grid';
+@import 'components/typography';
+@import 'components/slider';
+@import 'components/links';
+
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+@import 'sections/hero';
+@import 'sections/benefits';
+@import 'sections/garanty';
+@import 'sections/reviews';
+@import 'sections/contact';

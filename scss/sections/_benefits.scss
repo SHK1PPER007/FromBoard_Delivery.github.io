@@ -1,0 +1,61 @@
+.benefits {
+  &__title {
+    text-align: center;
+    margin-bottom: 24px;
+    color: $main-color;
+  }
+
+  &__item {
+    grid-column: 4 span;
+    align-items: center;
+    padding: 24px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 126px 126px;
+
+    @media (max-width: 1536px) {
+      grid-column: 5 span;
+    }
+
+    @media (max-width: 1024px) {
+      grid-column: 4 span;
+      padding: 0;
+      background-size: 110px 110px;
+    }
+
+    @media (max-width: 758px) {
+      grid-column: 2/6 span;
+      justify-content: center;
+    }
+
+    @media (max-width: 590px) {
+      grid-column: 2/4 span;
+      text-align: center;
+      padding: 12px;
+      background-position: top center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 12px;
+    color: $black-color;
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__descr {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    color: $black-color;
+  }
+}

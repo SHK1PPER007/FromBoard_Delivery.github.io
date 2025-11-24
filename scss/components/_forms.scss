@@ -1,0 +1,114 @@
+.form {
+  &__group {
+    margin-bottom: 20px;
+  }
+  
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    &:focus {
+      outline: none;
+      border-color: #a78bfA;
+    }
+  }
+}
+
+input {
+  flex: 1;
+  font-size: 16px;
+  border: 2px solid #111827;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: "Formular", sans-serif;
+  transition: border-color 0.4s ease-in-out;
+
+  &::placeholder {
+    color: #6b7280;
+    transition: color 0.4s ease-in-out;
+  }
+
+  &:hover {
+    border-color: #8B5CF6;
+
+    &::placeholder {
+      color: #8B5CF6;
+    }
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: #8B5CF6;
+  }
+}
+
+.full {
+  flex-direction: column;
+
+  input {
+    width: 100%;
+  }
+}
+
+input[type="submit"] {
+  width: 100%;
+  border-radius: 4px;
+  background: #8B5CF6;
+  border: none;
+  color: #F9FAFB;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Formular", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 12px;
+
+  &:hover {
+    opacity: 0.7;
+    background: #7C3AED;
+  }
+  
+  &:focus {
+    outline: 2px solid #a78bfA;
+    outline-offset: 2px;
+  }
+}
+
+textarea {
+  flex: 1;
+  font-size: 16px;
+  border: 2px solid #111827;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: "Formular", sans-serif;
+  transition: border-color 0.4s ease-in-out;
+  resize: vertical;
+  min-height: 100px;
+
+  &::placeholder {
+    color: #6b7280;
+    transition: color 0.4s ease-in-out;
+  }
+
+  &:hover {
+    border-color: #8B5CF6;
+
+    &::placeholder {
+      color: #8B5CF6;
+    }
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: #8B5CF6;
+  }
+}
