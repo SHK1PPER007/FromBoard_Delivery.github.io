@@ -31,8 +31,9 @@
     }
   }
 
-  &__slider-container {
+&__slider-container {
     grid-column: 2/10 span;
+    position: static;
 
     @media (max-width: 1536px) {
       grid-column: 2/8 span;
@@ -50,6 +51,7 @@
       grid-column: 6 span;
     }
   }
+
 
   &__content {
     padding: 32px 43px;
@@ -113,8 +115,8 @@
   &__btn-next,
   &__btn-prev {
     position: absolute;
-    top: 55%;
-    left: 3.5%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 60px;
     height: 60px;
     border: none;
@@ -152,15 +154,19 @@
     &.focus-visible .reviews__svg-prev path {
       fill: $active-color;
     }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__btn-prev {
+    left: 0;   
+    right: auto;
   }
 
   &__btn-next {
-    right: 3.5%;
+    right: 0; 
     left: auto;
-  }
-
-  &__btn-next::after,
-  &__btn-prev::after {
-    display: none;
   }
 }
