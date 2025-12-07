@@ -188,3 +188,18 @@
 .swiper-slide {
   height: auto;
 }
+
+.reviews__swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+}
