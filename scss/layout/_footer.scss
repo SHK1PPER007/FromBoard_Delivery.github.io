@@ -129,6 +129,25 @@
     margin: 0;
     color: $light-color;
 
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      border-color: transparent;
+      color: $purple-dark-color;
+    }
+
+    &:active {
+      border-color: $purple-dark-color;
+      color: $purple-dark-color;
+    }
+
+    &.focus-visible {
+      border-color: $purple-dark-color;
+      color: $purple-dark-color;
+    }
+
     @media (max-width: 1536px) {
       font-size: 30px;
       line-height: 32px;
