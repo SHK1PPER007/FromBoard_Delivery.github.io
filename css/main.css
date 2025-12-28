@@ -213,6 +213,7 @@ a {
   border: 2px solid #8b5cf6;
   border-radius: 4px;
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  text-align: center;
 }
 .btn:focus {
   outline: none;
@@ -898,6 +899,21 @@ a {
   line-height: 40px;
   margin: 0;
 }
+.header-top__tel:focus {
+  outline: none;
+}
+.header-top__tel:hover {
+  border-color: transparent;
+  color: #8b5cf6;
+}
+.header-top__tel:active {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+.header-top__tel.focus-visible {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
 @media (max-width: 1536px) {
   .header-top__tel {
     font-size: 30px;
@@ -1208,6 +1224,21 @@ a {
   line-height: 40px;
   margin: 0;
   color: #f9fafb;
+}
+.footer-top__tel:focus {
+  outline: none;
+}
+.footer-top__tel:hover {
+  border-color: transparent;
+  color: #8b5cf6;
+}
+.footer-top__tel:active {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+.footer-top__tel.focus-visible {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
 }
 @media (max-width: 1536px) {
   .footer-top__tel {
