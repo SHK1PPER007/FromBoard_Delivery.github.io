@@ -1,0 +1,128 @@
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 28px;
+  color: #f9fafb;
+  background-color: #8b5cf6;
+  border: 2px solid #8b5cf6;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  border-color: #a78bfa;
+  background-color: #a78bfa;
+}
+.btn:active {
+  border-color: #6d28d9;
+  background-color: #6d28d9;
+}
+.btn:disabled {
+  border-color: #ddd6fe;
+  background-color: #ddd6fe;
+}
+.btn.focus-visible {
+  border-color: #6d28d9;
+  background-color: #a78bfa;
+}
+
+.page-404 {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: "Formular", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-404__container {
+  width: 100%;
+  max-width: calc(1536px + (15px * 2));
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.page-404__image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: "Formular", sans-serif;
+  text-size-adjust: 100%;
+  color: #111827;
+}
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
